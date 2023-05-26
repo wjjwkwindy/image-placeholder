@@ -1,0 +1,3 @@
+[submodule "back-end/image-generate"]
+	path = back-end/image-generate
+	url = https://github.com/wjjwkwindy/image-generate.git

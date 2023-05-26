@@ -1,4 +1,4 @@
-const generateImg = require("image-generate");
+const generateImg = require("../image-generate");
 
 const Koa = require("koa");
 const cors = require("@koa/cors");
