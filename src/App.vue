@@ -1,20 +1,23 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import { onMounted, ref } from 'vue';
+import { marked } from 'marked';
+
+const content = ref('');
+const docs = '../index.md';
+
+async function getDocs() {
+  const res = await fetch(docs);
+  const text = await res.text();
+  content.value = marked(text);
+}
+
+onMounted(() => {
+  getDocs();
+});
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div v-html="content" v-highlight class="prose"></div>
 </template>
 
 <style scoped>
