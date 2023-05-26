@@ -2,17 +2,12 @@
 import { onMounted, ref } from 'vue';
 import { marked } from 'marked';
 
-const content = ref('');
-const docs = '../index.md';
+import docs from '../index.md?raw';
 
-async function getDocs() {
-  const res = await fetch(docs);
-  const text = await res.text();
-  content.value = marked(text);
-}
+const content = ref('');
 
 onMounted(() => {
-  getDocs();
+  content.value = marked(docs);
 });
 </script>
 
