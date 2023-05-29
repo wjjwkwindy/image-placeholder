@@ -4,7 +4,7 @@
 
 👋 使用网址轻松生成占位图
 
-![image-placeholder](http://localhost:3000/700x200)
+![image-placeholder](https://img.arcticalpaca.com/700x200)
 
 ### 用法
 
@@ -18,7 +18,7 @@ http://img.arcticalpaca.com/{size}?text={text}
 
 > {width}x{height}
 
-![image-placeholder](http://localhost:3000/200x100)
+![image-placeholder](https://img.arcticalpaca.com/200x100)
 
 ```txt
 http://img.arcticalpaca.com/300x200
@@ -28,7 +28,7 @@ http://img.arcticalpaca.com/300x200
 
 > ?text={text}
 
-![image-placeholder](http://localhost:3000/200x100?text=Hello)
+![image-placeholder](https://img.arcticalpaca.com/200x100?text=Hello)
 
 ```txt
 http://img.arcticalpaca.com/300x200?text=Hello
