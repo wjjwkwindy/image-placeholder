@@ -38,10 +38,12 @@ http://img.arcticalpaca.com/300x200?text=Hello
 
 ### 鸣谢
 
+Icon by [Iconfont](https://www.iconfont.cn/illustrations/detail?cid=44142)
+
 Image generated with [Koa](https://github.com/koajs/koa) and [Canvas](https://github.com/Automattic/node-canvas)
 
-front-end by [Vue](https://cn.vuejs.org/)
+Front-end by [Vue](https://cn.vuejs.org/)
 
-<div style="margin-top:50px;">
-  <p>Made by <a href="https://github.com/wjjwkwindy">Hudson Alen</a> | <a href="https://github.com/wjjwkwindy/image-placeholder">Source Code</a></p>
-</div>
+<div style="margin-top:50px;"></div>
+
+Made by [Arctic Alpaca](https://github.com/wjjwkwindy) | [Source Code](https://github.com/wjjwkwindy/image-placeholder)
