@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postinstall": "git submodule foreach pnpm install"
   },
   "dependencies": {
     "highlight.js": "^11.8.0",
