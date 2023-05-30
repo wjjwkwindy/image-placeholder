@@ -7,7 +7,13 @@ import docs from '../index.md?raw';
 const content = ref('');
 
 onMounted(() => {
-  content.value = marked(docs);
+  // markdown renderer
+  const renderer = new marked.Renderer();
+  renderer.link = (href, title, text) => {
+    return `<a target="_blank" href="${href}" rel="noopener noreferrer nofollow">${text}</a>`;
+  };
+  // markdown to html
+  content.value = marked(docs, { renderer });
 });
 </script>
 
